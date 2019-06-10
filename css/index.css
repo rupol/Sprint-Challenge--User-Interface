@@ -163,7 +163,13 @@ p {
   margin: 0 auto;
 }
 
-/* NAVIGATION */
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/* HEADER */
 .navigation {
   height: 100px;
   display: flex;
@@ -176,7 +182,13 @@ p {
   text-decoration: none;
   color: black;
   font-size: 14px;
-  padding: 48px 43px 40px;
+  padding: 43px;
+}
+
+@media only screen and (max-width: 850px) {
+  .navigation a {
+    padding: 43px 0 43px;
+  }
 }
 
 .logo {
@@ -185,6 +197,10 @@ p {
 
 .navigation a:hover {
   color: #028ade;
+}
+
+.jumbo-img {
+  width: 100%;
 }
 
 /* MAIN CONTENT */
@@ -202,6 +218,12 @@ p {
   width: 48%;
   padding: 0 1%;
   padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .top-content .text-container {
+    width: 100%;
+  }
 }
 
 .middle-content {
@@ -281,6 +303,17 @@ p {
   padding-right: 4%;
 }
 
+@media only screen and (max-width: 600px) {
+  .bottom-content {
+    display: inline-block;
+  }
+
+  .bottom-content .text-container {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
 .bottom-content .text-container:last-child {
   padding-right: 0;
 }
@@ -318,19 +351,21 @@ footer nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between;
-  height: 927px;
+  align-content: space-evenly;
+  /* height: 927px; */
 }
 
 .middle-content-about .about-box {
   width: 46%;
-  margin: 9px 2% 0;
+  height: 430px;
+  margin: 9px 2% 50px;
   padding-bottom: 20px;
   border-bottom: 1px dashed black;
 }
 
 .middle-content-about .about-box .about-image {
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .middle-content-about .about-box p {
@@ -361,5 +396,12 @@ footer nav a {
 
 .bottom-content-about {
   width: 100%;
-  padding: 50px 2.5% 40px;
+  padding: 0 2.5% 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .middle-content-about .about-box {
+    width: 100%;
+    height: auto;
+  }
 }
