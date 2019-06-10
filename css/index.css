@@ -176,7 +176,7 @@ p {
   text-decoration: none;
   color: black;
   font-size: 14px;
-  padding: 46px 43px;
+  padding: 48px 43px 40px;
 }
 
 .logo {
@@ -337,12 +337,26 @@ footer nav a {
   padding-bottom: 20px;
 }
 
-.middle-content-about .about-box button {
+.btn {
   border: 2px solid black;
   background: white;
   padding: 9px 22px;
   border-radius: 10px;
   font-size: 16px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .bottom-content-about {
